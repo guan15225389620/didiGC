@@ -1,0 +1,114 @@
+.main{
+    margin-top:30px;
+    display: none;
+}
+.main.active{
+    display: block;
+}
+/*首页*/
+/*轮播图*/
+body{
+    background-color:#F5F5F5;
+}
+.scroll{
+    overflow-x:hidden;
+    position: relative;
+}
+.scroll .scroll-box{
+    width: 400%;
+    display: table;
+}
+.scroll-box li{
+    display: table-cell;
+    width:25%;
+}
+.scroll-box li img{
+    width:100%;
+}
+.scroll .points{
+    position:relative;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width: 200px;
+    text-align: center;
+}
+.scroll .points li{
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background-color:gray;
+    margin:0 5px;
+    display: inline-block;
+}
+.scroll .points .active{
+    background-color: #fff;
+}
+/*主体*/
+.main-part{
+    width: 100%;
+    margin-top:-40px;
+    background-color:#e0e0e0;
+}
+.main-part .list{
+    width:100%;
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding:30px 20px;
+    margin-bottom:10px;
+}
+.item{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.item img{
+    width:50px;
+    margin-bottom:5px;
+}
+.item span{
+    font-size:15px;
+    color:#000000;
+}
+
+/*底部栏*/
+footer{
+    position:fixed;
+    left:0;
+    bottom:0;
+    background-color: #444444;
+    display:table;
+    width: 100%;
+    text-align: center;
+    padding:5px;
+}
+footer .nav{
+    display: table-cell;
+    width: 20%;
+}
+footer .nav span{
+    color: #fff;
+    font-size:8px;
+}
+footer .nav img{
+    display: block;
+    margin:auto;
+    width:25px;
+    height:25px;
+}
+footer .nav .red{
+    display: none;
+}
+footer .nav.active span{
+    color: red;
+}
+footer .nav.active .red{
+    display: block;
+}
+footer .nav.active .white{
+    display: none;
+}

@@ -1,0 +1,74 @@
+.main{
+    margin-bottom:80px;
+}
+
+
+/*选择块*/
+.piece-box{
+    display: table;
+    width: 100%;
+    text-align: center;
+    background-color: #ccc;
+}
+.piece-box a{
+    display: table-cell;
+    width:33.33333%;
+    padding:10px 0;
+}
+.piece-box a span{
+    font-size:20px;
+    color:#000;
+}
+.piece-box .active{
+    background-color: #fff;
+}
+.piece-box .active span{
+    color:lightskyblue;
+}
+
+.content-path .content{
+    width: 100%;
+}
+/*.content-path .content:nth-child(2){*/
+    /*background-color:blue;*/
+/*}*/
+.content-path .content:nth-child(3) .content-box-top img{
+    margin:30px 0;
+}
+.content-path .content:nth-child(3) .content-box-top{
+    margin-bottom:20px;
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+/*轮播图*/
+.scroll img{
+    width: 100%;
+}
+/*内容*/
+/*上部内容*/
+.content-box-top,.content-box-middle,.content-box-bottom{
+    width: 100%;
+    text-align: center;
+}
+main h1{
+    font-size:20px;
+}
+.content-box-top p{
+    font-size:10px;
+    color: #9a9a9a;
+}
+.content img{
+    width:100%;
+}
+.content-box-middle span,.content-box-bottom span{
+    display: block;
+    text-align: left;
+    margin-left:30px;
+    padding:5px 0;
+    font-size:15px;
+    color: #9a9a9a;
+}

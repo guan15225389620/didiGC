@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header,footer{
+    z-index: 100;
+}
+header{
+    position: fixed;
+    width:100%;
+    background-color:blue;
+    top:0;
+    color: #fff;
+    font-size:20px;
+    padding:5px 0;
+    text-align: center;
+}
+header a{
+    position:absolute;
+    width:10px;
+    left:20px;
+    bottom:0;
+    top:45%;
+    -webkit-transform: translateY(-50%);
+    transform:translateY(-50%);
+}

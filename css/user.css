@@ -1,0 +1,84 @@
+
+/*#user{*/
+    /*background-color: red;*/
+/*}*/
+.container .login{
+    width:100%;
+    text-align: center;
+    border:1px solid transparent;
+    background-image: url('../image/banner5.png');
+}
+
+.container ul{
+    display: flex;
+    flex-flow: column nowrap;
+    margin:20px 100px;
+}
+.container ul li{
+    margin-bottom:20px;
+}
+.container ul li img{
+    width:50%;
+}
+.container ul li span{
+    font-size:20px;
+}
+.container ul li a{
+    font-size:20px;
+    background-color:cornflowerblue;
+    border-radius:5px;
+    border:1px solid transparent;
+    color: #fff;
+    padding:5px;
+}
+
+/*主体内容*/
+.person{
+     display: flex;
+     flex-flow:column nowrap;
+     padding:10px;
+    /*background-color: red;*/
+ }
+.person a {
+    border: 1px solid #cccccc;
+    border-radius:5px;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    padding:10px;
+    margin-bottom:10px;
+    background-color: #fff;
+}
+.person a img{
+    width:10%;
+}
+
+.person a div{
+    position: relative;
+    left:50%;
+    width: 8px;
+    height:8px;
+}
+.person a div::before,.person a div::after{
+    content: '';
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height: 0;
+    width: 0;
+    left:100%;
+}
+.person a div::before{
+    border:10px solid transparent;
+    border-left:10px solid #e0e0e0;
+}
+.person a div::after{
+    border:5px solid transparent;
+    border-left:5px solid #fff;
+}
+.person a span{
+    font-size:20px;
+    color: #000;
+    margin-left:10px;
+}
